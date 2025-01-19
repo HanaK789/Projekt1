@@ -2,7 +2,7 @@
 projekt_1.py: první projekt do Engeto Online Python Akademie
 
 author: Hana Kadrmanová
-email: hkadrmanova&yahoo.com
+email: hkadrmanova@yahoo.com
 
 """
 
