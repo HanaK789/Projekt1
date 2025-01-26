@@ -83,9 +83,9 @@ while True:
     # 3. Analýza textu
     words = selected_text.split()  # Rozdělení textu na jednotlivá slova
     word_count = len(words)  # Počet slov v textu
-    title_case_count = sum(1 for word in words if word.istitle())  # Slova začínající velkým písmenem
+    title_case_count = sum(1 for word in words if word.istitle() and word.isalpha())  # Slova začínající velkým písmenem
     uppercase_count = sum(1 for word in words if word.isupper() and word.isalpha())  # Slova velkými písmeny
-    lowercase_count = sum(1 for word in words if word.islower())  # Slova malými písmeny
+    lowercase_count = sum(1 for word in words if word.islower() and word.isalpha())  # Slova malými písmeny
     numeric_count = sum(1 for word in words if word.isdigit())  # Počet čísel v textu
     numeric_sum = sum(int(word) for word in words if word.isdigit())  # Součet všech čísel
 
